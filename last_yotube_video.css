@@ -1,0 +1,70 @@
+:root {
+  --font-family: "Roboto-Bold", Helvetica, sans-serif;
+  --background: transparent;
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: local("/Roboto/Roboto-Bold.woff2") url(/Roboto/Roboto-Bold.woff2)
+    format("woff2");
+  font-weight: bold, normal;
+  font-style: normal;
+  font-variant: normal;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--background);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden hidden;
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.last-youtube-video-container {
+  background: var(--background);
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.last-youtube-thumbnail {
+  font-family: var(--font-family);
+  background: transparent;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.last-youtube-video {
+  font-family: var(--font-family);
+  background: var(--background);
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+}
