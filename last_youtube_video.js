@@ -64,7 +64,10 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       const videoId = match[1];
-      const embedURL = `https://www.youtube.com/embed/${videoId}?autoplay=${autoplay}&mute=${muted}`;
+
+      const embedURL = `https://www.youtube.com/embed/${videoId}?autoplay=${
+        autoplay ? 1 : 0
+      }&mute=${muted ? 1 : 0}`;
       lastYTVid.src = embedURL;
     })
     .catch((error) => {
